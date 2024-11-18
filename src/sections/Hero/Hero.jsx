@@ -6,6 +6,8 @@ import twitterLight from '../../assets/twitter-light.svg';
 import twitterDark from '../../assets/twitter-dark.svg';
 import githubLight from '../../assets/github-light.svg';
 import githubDark from '../../assets/github-dark.svg';
+import linkedinnLight from '../../assets/linkedin-light.svg';
+import linkedinnDark from '../../assets/linkedin-dark.svg';
 import { useTheme } from '../../common/ThemeContext';
 
 function Hero() {
@@ -14,6 +16,7 @@ function Hero() {
   const themeIcon = theme === 'light' ? sun : moon;
   const twitterIcon = theme === 'light' ? twitterLight : twitterDark;
   const githubIcon = theme === 'light' ? githubLight : githubDark;
+  const linkedinnIcon = theme === 'light' ? linkedinnLight : linkedinnDark;
 
   return (
     <section id="hero" className={styles.container}>
@@ -36,18 +39,25 @@ function Hero() {
         </h1>
         <h2>Product Owner</h2>
         <span>
-          <a href="twitter.com" target="_blank">
+          <a href="https://x.com/lachy78503406" target="_blank">
             <img src={twitterIcon} alt="Twitter Icon" />
           </a>
-          <a href="github.com" target="_blank">
+          <a href="https://github.com/Pound1" target="_blank">
             <img src={githubIcon} alt="GitHub Icon" />
+          </a>
+          <a
+            href="https://www.linkedin.com/in/lachlan-henricus-pound-103a78a0"
+            target="_blank"
+          >
+            <img src={linkedinnIcon} alt="linkedinn Icon" />
           </a>
         </span>
         <p className={styles.description}>
-          With a passion for something that goes over two lines.
+          Passion for coding, crypto, and 3D modeling: technology is a domain
+          with limitless creativity.
         </p>
-        <a href="some page" download>
-          <button className="hover">Resume</button>
+        <a href="some page" /*download <- enable when ready*/>
+          <button className="hover">Resumé</button>
         </a>
       </div>
     </section>
