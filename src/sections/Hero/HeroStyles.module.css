@@ -76,7 +76,7 @@
 
 @media (width >= 800px) {
   .container {
-    flex-direction: row-reverse;
+    flex-direction: row;
     align-items: center;
     justify-content: space-evenly;
     .hero {
