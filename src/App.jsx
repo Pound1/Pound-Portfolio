@@ -1,12 +1,22 @@
 import './App.css';
 import Hero from './sections/Hero/Hero';
 import Projects from './sections/Projects/Projects';
+import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
+import NavBar from './pages/navBar';
 
 function App() {
   return (
     <>
-      <Hero />
-      <Projects />
+      <Router>
+        <NavBar />
+        <Routes>
+          <Route path="Pound-Portfolio/" element={<Hero />} />
+          <Route
+            path="Pound-Portfolio/pages/ProjectDetails"
+            element={<Projects />}
+          />
+        </Routes>
+      </Router>
     </>
   );
 }
