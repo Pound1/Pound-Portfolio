@@ -1,0 +1,9 @@
+.navbar {
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+
+  h1 {
+    color: gray;
+  }
+}

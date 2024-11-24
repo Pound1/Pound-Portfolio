@@ -56,9 +56,9 @@ function Hero() {
           Passion for coding, crypto, and 3D modeling: technology is a domain
           with limitless creativity.
         </p>
-        <a href="some page" /*download <- enable when ready*/>
+        {/* <a href="some page">
           <button className="hover">Resumé</button>
-        </a>
+        </a> */}
       </div>
     </section>
   );

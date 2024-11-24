@@ -1,11 +1,15 @@
 import React from 'react';
-import navImage from '../assets/moon.svg';
+import styles from './NavBarStyles.module.css';
+import { Link } from 'react-router-dom';
 
 function NavBar() {
   return (
     <>
-      <div>NavBar</div>
-      <img href={navImage}></img>
+      <div className={styles.navbar}>
+        <Link to={'Pound-Portfolio/'}>Home</Link>
+        <Link to={'Pound-Portfolio/pages/ProjectDetails'}>Projects</Link>
+        <Link to={'Pound-Portfolio/pages/Gallery'}>Gallery</Link>
+      </div>
     </>
   );
 }
