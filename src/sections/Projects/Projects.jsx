@@ -1,8 +1,7 @@
 import styles from './ProjectsStyles.module.css';
 import viberr from '../../assets/viberr.png';
-import hipsster from '../../assets/hipsster.png';
-import fitlift from '../../assets/fitlift.png';
 import ProjectCard from '../../common/ProjectCard';
+import chess from '../../assets/Uni Project-Chess Render 1.jpg';
 
 function Projects() {
   return (
@@ -10,22 +9,10 @@ function Projects() {
       <h1 className="sectionTitle">Projects</h1>
       <div className={styles.projectsContainer}>
         <ProjectCard
-          src={viberr}
+          src={chess}
           link="https://google.com"
-          h3="Viberr"
-          p="Streaming Service"
-        />
-        <ProjectCard
-          src={hipsster}
-          link="https://google.com"
-          h3="Hipsster"
-          p="Modern Optometrist"
-        />
-        <ProjectCard
-          src={fitlift}
-          link="https://google.com"
-          h3="Fitlift"
-          p="Fitness app"
+          h3="Chess Board"
+          p="University Assignment"
         />
       </div>
     </section>
