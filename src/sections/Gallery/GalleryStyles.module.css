@@ -1,0 +1,19 @@
+.carousel {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    height: auto;
+    max-width: 100%; 
+    margin: 40px auto;  
+    overflow: hidden;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+
+    img {
+        width: 250px;
+        height: auto;
+        object-fit: cover;
+        cursor: pointer;
+        transition: transform 0.3s ease-in-out;
+    }
+}
