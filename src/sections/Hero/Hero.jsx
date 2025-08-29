@@ -9,6 +9,7 @@ import githubDark from '../../assets/github-dark.svg';
 import linkedinnLight from '../../assets/linkedin-light.svg';
 import linkedinnDark from '../../assets/linkedin-dark.svg';
 import { useTheme } from '../../common/ThemeContext';
+import NeumorphicButton from '../../common/NeumorphicButton';
 
 function Hero() {
   const { theme, toggleTheme } = useTheme();
@@ -21,6 +22,7 @@ function Hero() {
   return (
     <section id="hero" className={styles.container}>
       <div className={styles.colorModeContainer}>
+        <NeumorphicButton label={'button'}></NeumorphicButton>
         <img
           className={styles.hero}
           src={heroImage}
